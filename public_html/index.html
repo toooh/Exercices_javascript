@@ -9,12 +9,12 @@
         <script src="resources/js/modernizr.custom.js"></script>
         <script>
             function loadPage(value) {
-                document.getElementById("page").innerHTML = '<object type="text/html" style="height:90vh; margin-top:5%; margin-left:15%;" data="resources/pages/' + value + '.html" ></object>';
+                document.getElementById("page").innerHTML = '<object type="text/html" class="full-width" style="width:100%; height: 80vh; margin-top:5%; margin-left:15%; overflow: hidden !important;" data="resources/pages/' + value + '.html" ></object>';
             }
         </script> 
     </head>
     <body>
-        <div class="container">
+        <div class="container, full-width">
             <ul id="gn-menu" class="gn-menu-main">
                 <li class="gn-trigger">
                     <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -42,9 +42,9 @@
             </ul>
             <br>
             <br>
-            <div id="page" style="width:150%; overflow-wrap:normal;">
+            <div id="page" style="overflow:hidden !important;">
                 <div id="consignes" style="width:100%; margin:5%">
-                    <div style="display: block; height: 100%; float:left; margin-right:5%; width:65%">
+                    <div style="display: block; height: 100%; float:left; width:60%; margin-right:5%">
                         Nous allons faire tous nos exercices de Javascript via ce projet. <br>
                         Le but de ce projet est de réviser les principes de versionning, d'écrire nos premières lignes de JS et surtout d'aller fouiller dans du code.<br>
                         <br>
@@ -56,7 +56,7 @@
                             <li>Finir l'exercice en cours chez vous si vous n'avez pas eu le temps de le finir dans le temps imparti. Ces exercices constitueront une partie de la note de TP.</li>
                         </ul>
                     </div>
-                    <div style="display: block; height: 100%; width:15%; float:right; margin-right:5%;">  <img src="resources/img/java_js.png"></div>
+                    <div style="display: block; height: 100%; width:15%; float:left; margin-right:5%;">  <img src="resources/img/java_js.png"></div>
                 </div>
             </div>
         </div> <!-- /container -->
