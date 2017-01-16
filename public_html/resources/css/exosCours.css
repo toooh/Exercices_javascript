@@ -1,0 +1,7 @@
+._borderbottom{
+    border-bottom: 1px;
+    border-bottom-color: white;
+}
+._overflowhidden{
+    overflow: hidden;
+}
